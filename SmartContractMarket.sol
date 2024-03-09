@@ -2,7 +2,7 @@ pragma solidity >=0.4.11;
 contract SmartContractMarket {
     address public owner;
     uint public price; // 가격
-    uint public numberOfStocks; //재
+    uint public numberOfStocks; //재고
     modifier onlyOwner(){
         require(msg.sender == owner);
         _;
